@@ -1,0 +1,128 @@
+:root {
+  --animate-delay: 0.5s;
+  --color-bg-navbar: #ECEFF4;
+  --color-bg-body: #ECEFF4;
+  --color-bg-card: #E5E9F0;
+  --color-bg-progress: #D8DEE9;
+  --color-bg-navtongle: #E5E9F0;
+  --color-hr: #2969ff;
+  --color-bg-jumbotron: #E5E9F0;
+  --color-border: #2969ff;
+  --color-font: #2E3440;
+  --color-h1: #2969ff;
+  --color-h2: #2969ff;
+  --color-footer: #2969ff;
+  --color-font-footer: #ECEFF4;
+}
+
+[data-theme="dark"] {
+  --color-bg-navbar: #2E3440;
+  --color-bg-body: #2E3440;
+  --color-bg-card: #3B4252;
+  --color-bg-progress: #4C566A;
+  --color-bg-navtongle: #3B4252;
+  --color-hr: #ff4451;
+  --color-bg-jumbotron: #3B4252;
+  --color-border: #ff4451;
+  --color-font: #ECEFF4;
+  --color-h1: #ff4451;
+  --color-h2: #ff4451;
+  --color-footer: #ff4451;
+  --color-font-footer: #2E3440;
+}
+
+.jumbotron img {
+    width: 250px;
+    border: 5px solid var(--color-border);
+}
+
+.jumbotron {
+  height: 400px;
+  background-color: var(--color-bg-jumbotron);
+}
+
+hr {
+  width: 250px;
+  border-top: 3px solid var(--color-hr);
+}
+
+section {
+    min-height: 500px;
+}
+
+.progress-bar {
+    -webkit-transition: none !important;
+    transition: none !important;
+}
+
+.navbar {
+  background-color: var(--color-bg-navbar);
+}
+
+body {
+  background-color: var(--color-bg-body);
+}
+
+.card {
+  background-color: var(--color-bg-card);
+}
+
+.progress {
+  background-color: var(--color-bg-progress);
+}
+
+.navbar-toggler {
+  background-color: var(--color-bg-navtongle);
+}
+
+p {
+  color: var(--color-font);
+}
+
+h1 {
+  color: var(--color-h1);
+}
+
+h2 {
+  color: var(--color-h2);
+}
+
+.font-footer {
+  color: var(--color-font-footer);
+}
+
+.page-footer{
+  background-color: var(--color-footer);
+}
+
+.html {
+  background-color: #e34c26;
+}
+
+.js {
+  background-color: #f1e05a;
+}
+
+.css {
+  background-color: #563d7c;
+}
+
+.cplus{
+  background-color: #f34b7d;
+}
+
+.java {
+  background-color: #b07219;
+}
+
+.c {
+  background-color: #555555;
+}
+
+.python {
+  background-color: #3572A5;
+}
+
+.bash {
+  background-color: #89e051;
+}
