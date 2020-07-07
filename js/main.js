@@ -88,10 +88,12 @@ new WOW().init();
 			if (darkThemeSelected) {
 			  document.getElementById("nav").classList.toggle('navbar-dark');
 		  	document.body.setAttribute('data-theme', 'dark');
+		  	document.getElementById("icons").classList.toggle('fa-moon')
 		  	document.getElementById("brand").src="assets/img/icon-dark.png";
 			} else {
 			  document.getElementById("nav").classList.toggle('navbar-light');
 		  	document.body.removeAttribute('data-theme');
+		  	document.getElementById("icons").classList.toggle('fa-sun');
 		  	document.getElementById("brand").src="assets/img/icon.png";
 			}
     };
@@ -108,7 +110,7 @@ new WOW().init();
     		localStorage.removeItem('themeSwitch');
     	}
     	 	// Change colot Navbar
-    		if ( document.getElementById("nav").classList.contains('navbar-light') ) {
+    		if ( document.getElementById("nav").classList.contains('navbar-light')) {
           document.getElementById("nav").classList.toggle('navbar-dark');
           document.getElementById("nav").classList.remove("navbar-light");
           console.log('dark');
@@ -118,8 +120,15 @@ new WOW().init();
     		  console.log('light');
     		}
         // Change icon
-        if ( document.getElementById("icons").classList.contains('fa-moon') )
-        document.getElementById("icons").classList.toggle('fa-sun');
+        if ( document.getElementById("icons").classList.contains('fa-moon')) {
+          document.getElementById("icons").classList.toggle('fa-sun');
+          document.getElementById("icons").classList.remove('fa-moon');
+          console.log('light icon');
+        } else {
+          document.getElementById("icons").classList.toggle('fa-moon');
+          document.getElementById("icons").classList.remove('fa-sun');
+          console.log('dark icon');
+        }
     };
 	}
 });
