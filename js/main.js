@@ -26,6 +26,7 @@ $('a[href*="#"]')
     }
   });
 
+// Skill animation
 $(window).scroll (function(){
   var wScroll = $(this).scrollTop();
   
@@ -68,18 +69,57 @@ $(window).scroll (function(){
   }
 });
 
+// Initial wow
 new WOW().init();
+  
+  // Theme switch
+	var themeSwitch = document.getElementById('themeSwitch');
+	if(themeSwitch) {
+		initTheme(); // if user has already selected a specific theme -> apply it
+		themeSwitch.addEventListener('change', function(event){
+    	resetTheme(); // update color theme
+    });
 
-  document.getElementById('themeSwitch').addEventListener('change', function(event){
-    (event.target.checked) ? document.body.setAttribute('data-theme', 'dark') : document.body.removeAttribute('data-theme');
+    function initTheme() {
+    	var darkThemeSelected = (localStorage.getItem('themeSwitch') !== null && localStorage.getItem('themeSwitch') === 'dark');
+    	// update checkbox
+    	themeSwitch.checked = darkThemeSelected;
+			// update body data-theme attribute
+			if (darkThemeSelected) {
+			  document.getElementById("nav").classList.toggle('navbar-dark');
+		  	document.body.setAttribute('data-theme', 'dark');
+		  	document.getElementById("brand").src="assets/img/icon-dark.png";
+			} else {
+			  document.getElementById("nav").classList.toggle('navbar-light');
+		  	document.body.removeAttribute('data-theme');
+		  	document.getElementById("brand").src="assets/img/icon.png";
+			}
+    };
 
-    if ( document.getElementById("nav").classList.contains('navbar-light') )
-       document.getElementById("nav").classList.toggle('navbar-dark');
-
-    if ( document.getElementById("icons").classList.contains('fa-moon') )
-       document.getElementById("icons").classList.toggle('fa-sun');
-       
-    (event.target.checked) ? document.getElementById("brand").src="assets/img/icon-dark.png" : document.getElementById("brand").src="assets/img/icon.png";
-  });
-
+    function resetTheme() {
+    	if(themeSwitch.checked) { // dark theme has been selected
+    		document.body.setAttribute('data-theme', 'dark');
+        // Chanhe logo
+        document.getElementById("brand").src="assets/img/icon-dark.png";
+    		localStorage.setItem('themeSwitch', 'dark');
+    	} else {
+    		document.body.removeAttribute('data-theme');
+    		document.getElementById("brand").src="assets/img/icon.png";
+    		localStorage.removeItem('themeSwitch');
+    	}
+    	 	// Change colot Navbar
+    		if ( document.getElementById("nav").classList.contains('navbar-light') ) {
+          document.getElementById("nav").classList.toggle('navbar-dark');
+          document.getElementById("nav").classList.remove("navbar-light");
+          console.log('dark');
+    		} else {
+    		  document.getElementById("nav").classList.toggle('navbar-light');
+    		  document.getElementById("nav").classList.remove("navbar-dark");
+    		  console.log('light');
+    		}
+        // Change icon
+        if ( document.getElementById("icons").classList.contains('fa-moon') )
+        document.getElementById("icons").classList.toggle('fa-sun');
+    };
+	}
 });
