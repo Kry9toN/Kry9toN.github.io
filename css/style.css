@@ -85,6 +85,11 @@ h6 {
   color: var(--color-accent);
 }
 
+.btn {
+  color: var(--color-bg);
+  background-color: var(--color-accent);
+}
+
 .font-footer {
   color: var(--color-font-footer);
 }
