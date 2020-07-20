@@ -44,6 +44,11 @@ section {
   background-color: var(--color-bg);
 }
 
+pre {
+  color: var(--color-font);
+  background-color: var(--color-bg);
+}
+
 body {
   background-color: var(--color-bg);
 }
