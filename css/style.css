@@ -1,49 +1,35 @@
 :root {
   --animate-delay: 0.5s;
-  --color-bg-navbar: #ECEFF4;
-  --color-bg-body: #ECEFF4;
-  --color-bg-card: #E5E9F0;
+  --color-bg: #ECEFF4;
+  --color-bg-second: #E5E9F0;
   --color-bg-progress: #D8DEE9;
-  --color-bg-navtongle: #E5E9F0;
-  --color-hr: #2969ff;
-  --color-bg-jumbotron: #E5E9F0;
-  --color-border: #2969ff;
   --color-font: #2E3440;
-  --color-h1: #2969ff;
-  --color-h2: #2969ff;
-  --color-footer: #2969ff;
+  --color-accent: #2969ff;
   --color-font-footer: #ECEFF4;
 }
 
 [data-theme="dark"] {
-  --color-bg-navbar: #2E3440;
-  --color-bg-body: #2E3440;
-  --color-bg-card: #3B4252;
+  --color-bg: #2E3440;
+  --color-bg-second: #3B4252;
   --color-bg-progress: #4C566A;
-  --color-bg-navtongle: #3B4252;
-  --color-hr: #ff4451;
-  --color-bg-jumbotron: #3B4252;
-  --color-border: #ff4451;
   --color-font: #ECEFF4;
-  --color-h1: #ff4451;
-  --color-h2: #ff4451;
-  --color-footer: #ff4451;
+  --color-accent: #ff4451;
   --color-font-footer: #2E3440;
 }
 
 .jumbotron img {
     width: 250px;
-    border: 5px solid var(--color-border);
+    border: 5px solid var(--color-accent);
 }
 
 .jumbotron {
   height: 400px;
-  background-color: var(--color-bg-jumbotron);
+  background-color: var(--color-bg-second);
 }
 
 hr {
   width: 250px;
-  border-top: 3px solid var(--color-hr);
+  border-top: 3px solid var(--color-accent);
 }
 
 section {
@@ -56,15 +42,15 @@ section {
 }
 
 .navbar {
-  background-color: var(--color-bg-navbar);
+  background-color: var(--color-bg);
 }
 
 body {
-  background-color: var(--color-bg-body);
+  background-color: var(--color-bg);
 }
 
 .card {
-  background-color: var(--color-bg-card);
+  background-color: var(--color-bg-second);
 }
 
 .progress {
@@ -72,7 +58,7 @@ body {
 }
 
 .navbar-toggler {
-  background-color: var(--color-bg-navtongle);
+  background-color: var(--color-bg-second);
 }
 
 p {
@@ -80,11 +66,23 @@ p {
 }
 
 h1 {
-  color: var(--color-h1);
+  color: var(--color-accent);
 }
 
 h2 {
-  color: var(--color-h2);
+  color: var(--color-accent);
+}
+
+h3 {
+  color: var(--color-accent);
+}
+
+h5 {
+  color: var(--color-accent);
+}
+
+h6 {
+  color: var(--color-accent);
 }
 
 .font-footer {
@@ -92,7 +90,7 @@ h2 {
 }
 
 .page-footer{
-  background-color: var(--color-footer);
+  background-color: var(--color-accent);
 }
 
 .html {
