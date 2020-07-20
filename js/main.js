@@ -89,12 +89,12 @@ new WOW().init();
 			  document.getElementById("nav").classList.toggle('navbar-dark');
 		  	document.body.setAttribute('data-theme', 'dark');
 		  	document.getElementById("icons").classList.toggle('fa-moon')
-		  	document.getElementById("brand").src="assets/img/icon-dark.png";
+		  	document.getElementById("brand").src="/assets/img/icon-dark.png";
 			} else {
 			  document.getElementById("nav").classList.toggle('navbar-light');
 		  	document.body.removeAttribute('data-theme');
 		  	document.getElementById("icons").classList.toggle('fa-sun');
-		  	document.getElementById("brand").src="assets/img/icon.png";
+		  	document.getElementById("brand").src="/assets/img/icon.png";
 			}
     };
 
@@ -102,11 +102,11 @@ new WOW().init();
     	if(themeSwitch.checked) { // dark theme has been selected
     		document.body.setAttribute('data-theme', 'dark');
         // Chanhe logo
-        document.getElementById("brand").src="assets/img/icon-dark.png";
+        document.getElementById("brand").src="/assets/img/icon-dark.png";
     		localStorage.setItem('themeSwitch', 'dark');
     	} else {
     		document.body.removeAttribute('data-theme');
-    		document.getElementById("brand").src="assets/img/icon.png";
+    		document.getElementById("brand").src="/assets/img/icon.png";
     		localStorage.removeItem('themeSwitch');
     	}
     	 	// Change colot Navbar
