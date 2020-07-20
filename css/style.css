@@ -1,3 +1,4 @@
+/* Theme */
 :root {
   --animate-delay: 0.5s;
   --color-bg: #ECEFF4;
@@ -106,6 +107,32 @@ h6 {
   background-color: var(--color-accent);
 }
 
+/* Back to top button */
+.back-to-top {
+  position: fixed;
+  display: none;
+  background: var(--color-accent);
+  color: #fff;
+  padding: 2px 20px 8px 20px;
+  font-size: 16px;
+  border-radius: 4px 4px 0 0;
+  right: 15px;
+  bottom: 0;
+  transition: none;
+}
+
+.back-to-top:focus {
+  background: var(--color-accent);
+  color: #fff;
+  outline: none;
+}
+
+.back-to-top:hover {
+  background: var(--color-accent);
+  color: #fff;
+}
+
+/* Code color */
 .html {
   background-color: #e34c26;
 }
