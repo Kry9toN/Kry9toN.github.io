@@ -84,7 +84,7 @@ p {
   color: var(--color-font);
 }
 
-i {
+.font-color {
   color: var(--color-font);
 }
 
