@@ -66,7 +66,25 @@ body {
   background-color: var(--color-bg-second);
 }
 
+.btn {
+  color: var(--color-bg);
+  background-color: var(--color-accent);
+}
+
+.font-footer {
+  color: var(--color-font-footer);
+}
+
+.page-footer{
+  background-color: var(--color-accent);
+}
+
+/* Font */
 p {
+  color: var(--color-font);
+}
+
+i {
   color: var(--color-font);
 }
 
@@ -92,19 +110,6 @@ h5 {
 
 h6 {
   color: var(--color-accent);
-}
-
-.btn {
-  color: var(--color-bg);
-  background-color: var(--color-accent);
-}
-
-.font-footer {
-  color: var(--color-font-footer);
-}
-
-.page-footer{
-  background-color: var(--color-accent);
 }
 
 /* Back to top button */
