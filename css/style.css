@@ -58,6 +58,10 @@ body {
   background-color: var(--color-bg-second);
 }
 
+.bg-second {
+  background-color: var(--color-bg-second);
+}
+
 .progress {
   background-color: var(--color-bg-progress);
 }
