@@ -103,12 +103,14 @@ new WOW().init();
     function resetTheme() {
     	if(themeSwitch.checked) { // dark theme has been selected
     		document.body.setAttribute('data-theme', 'dark');
-        // Chanhe logo
-        document.getElementById("brand").src="/assets/img/icon-dark.png";
+               // Change logo
+                document.getElementById("brand").src="/assets/img/icon-dark.png";
+                document.getElementById("login").src="/assets/img/login-dark.png";
     		localStorage.setItem('themeSwitch', 'dark');
     	} else {
     		document.body.removeAttribute('data-theme');
     		document.getElementById("brand").src="/assets/img/icon.png";
+                document.getElementById("login").src="/assets/img/login.png";
     		localStorage.removeItem('themeSwitch');
     	}
     	 	// Change colot Navbar
