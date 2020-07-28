@@ -90,11 +90,13 @@ new WOW().init();
 		  	document.body.setAttribute('data-theme', 'dark');
 		  	document.getElementById("icons").classList.toggle('fa-moon')
 		  	document.getElementById("brand").src="/assets/img/icon-dark.png";
+                        document.getElementById("login").src="/assets/img/login-dark.png";
 			} else {
 			  document.getElementById("nav").classList.toggle('navbar-light');
 		  	document.body.removeAttribute('data-theme');
 		  	document.getElementById("icons").classList.toggle('fa-sun');
 		  	document.getElementById("brand").src="/assets/img/icon.png";
+                        document.getElementById("login").src="/assets/img/login.png";
 			}
     };
 
