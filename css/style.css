@@ -95,15 +95,6 @@ p {
   color: var(--color-font);
 }
 
-li::before {
-  content: "• ";
-  color: var(--color-font); /* or whatever color you prefer */
-}
-
-li a {
-     color: var(--color-font);
-}
-
 .font-color {
   color: var(--color-font);
 }
