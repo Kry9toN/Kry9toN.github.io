@@ -83,11 +83,11 @@ body {
 }
 
 .font-footer {
-  color: var(--color-font-footer);
+  color: var(--color-font);
 }
 
 .page-footer{
-  background-color: var(--color-accent);
+  background-color: var(--color-bg);
 }
 
 /* Font */
@@ -116,11 +116,11 @@ h4 {
 }
 
 h5 {
-  color: var(--color-accent);
+  color: var(--color-font);
 }
 
 h6 {
-  color: var(--color-accent);
+  color: var(--color-font);
 }
 
 @font-face {
