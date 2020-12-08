@@ -53,6 +53,10 @@ body {
   background-color: var(--color-bg);
 }
 
+li {
+  color: var(--color-font);
+}
+
 .card {
   background-color: var(--color-bg-second);
 }
