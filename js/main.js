@@ -143,6 +143,13 @@ jQuery(document).ready(function ($) {
         },
         2500
       );
+
+      $(".cdci").animate(
+        {
+          width: "83%",
+        },
+        2500
+      );
     }
   });
 
