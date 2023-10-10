@@ -6,7 +6,7 @@
   --color-bg-progress: #D8DEE9;
   --color-font: #2E3440;
   --color-accent: #2969ff;
-  --color-font-footer: #ECEFF4;
+  --color-font-flip: #ECEFF4;
 }
 
 [data-theme="dark"] {
@@ -15,7 +15,7 @@
   --color-bg-progress: #4C566A;
   --color-font: #ECEFF4;
   --color-accent: #ff4451;
-  --color-font-footer: #2E3440;
+  --color-font-flip: #2E3440;
 }
 
 .jumbotron img {
@@ -84,6 +84,7 @@ li {
 .btn {
   color: var(--color-bg);
   background-color: var(--color-accent);
+
 }
 
 .font-footer {
@@ -92,6 +93,10 @@ li {
 
 .page-footer{
   background-color: var(--color-bg);
+}
+
+.icon-contact {
+  color: var(--color-font-flip);
 }
 
 /* Font */
@@ -178,6 +183,10 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   background-color: #563d7c;
 }
 
+.sharpc {
+  background-color: #51e064;
+}
+
 .cplus{
   background-color: #f34b7d;
 }
@@ -196,4 +205,24 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 .bash {
   background-color: #89e051;
+}
+
+.rust {
+  background-color: #e0c651;
+}
+
+.astudio {
+  background-color: #51e0a9;
+}
+
+.docker {
+  background-color: #5153e0;
+}
+
+.unity {
+  background-color: #393a39;
+}
+
+.server {
+  background-color: #db51e0;
 }
